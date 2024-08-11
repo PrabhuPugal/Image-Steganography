@@ -1,19 +1,37 @@
-# Steganography
-The word Steganography is derived from two Greek words- ‘stegos’ meaning ‘to cover’ and ‘grayfia’, meaning ‘writing’, thus translating to ‘covered writing’, or ‘hidden writing’. Steganography is a method of hiding secret data, by embedding it into an audio, video, image, or text file. It is one of the methods employed to protect secret or sensitive data from malicious attacks. 
+# Image Steganography
 
-How is it different from cryptography? 
-Cryptography and steganography are both methods used to hide or protect secret data. However, they differ in the respect that cryptography makes the data unreadable, or hides the meaning of the data, while steganography hides the existence of the data. 
+## Description
+**Image Steganography** is a project that demonstrates the technique of hiding information within image files. This method allows for secure data transmission by embedding secret messages into images without noticeably altering their appearance. The project aims to provide a practical implementation of steganography techniques using various algorithms.
 
-In layman’s terms, cryptography is similar to writing a letter in a secret language: people can read it, but won’t understand what it means. However, the existence of a (probably secret) message would be obvious to anyone who sees the letter, and if someone either knows or figures out your secret language, then your message can easily be read. 
+## Features
+- **Hide Text in Image**: Embeds textual messages into image files using steganographic methods.
+- **Extract Hidden Text**: Retrieves hidden messages from images.
+- **Support for Multiple Image Formats**: Compatible with common image formats such as PNG and BMP.
+- **Encryption/Decryption**: Optionally encrypts and decrypts messages for added security.
 
-If you were to use steganography in the same situation, you would hide the letter inside a pair of socks that you would be gifting the intended recipient of the letter. To those who don’t know about the message, it would look like there was nothing more to your gift than the socks. But the intended recipient knows what to look for, and finds the message hidden in them. 
+## How It Works
+The application uses the **Least Significant Bit (LSB) algorithm** for hiding and retrieving text messages within images. The LSB algorithm works by modifying the least significant bits of the image pixels, which introduces minimal changes to the image’s appearance.
 
-Similarly, if two users exchanged media files over the internet, it would be more difficult to determine whether these files contain hidden messages than if they were communicating using cryptography. 
+1. **Hiding Messages**:
+   - Convert the message to binary format.
+   - Replace the least significant bits of the image pixels with the message bits.
+   - Save the modified image with the hidden message.
 
-Cryptography is often used to supplement the security offered by steganography. Cryptography algorithms are used to encrypt secret data before embedding it into cover files. 
+2. **Extracting Messages**:
+   - Read the least significant bits of the image pixels.
+   - Reconstruct the hidden message from the extracted bits.
 
-Image Steganography – 
-As the name suggests, Image Steganography refers to the process of hiding data within an image file. The image selected for this purpose is called the cover image and the image obtained after steganography is called the stego image. 
+## Contributing
+Contributions are welcome! If you would like to contribute to the development of the Bank Management System, please follow these steps:
 
-How is it done? 
-An image is represented as an N*M (in case of grayscale images) or N*M*3 (in case of color images) matrix in memory, with each entry representing the intensity value of a pixel. In image steganography, a message is embedded into an image by altering the values of some pixels, which are chosen by an encryption algorithm. The recipient of the image must be aware of the same algorithm in order to know which pixels he or she must select to extract the message. 
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and test thoroughly.
+4. Submit a pull request with a clear description of the changes.
+5. Please ensure that your code adheres to the project's coding standards and includes appropriate documentation.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+## Contact
+For questions or feedback, please reach out to me at prabhupugal01@gmail.com.
