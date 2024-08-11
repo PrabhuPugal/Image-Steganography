@@ -22,7 +22,7 @@ The application uses the **Least Significant Bit (LSB) algorithm** for hiding an
    - Reconstruct the hidden message from the extracted bits.
 
 ## Contributing
-Contributions are welcome! If you would like to contribute to the development of the Bank Management System, please follow these steps:
+Contributions are welcome! If you would like to contribute to the development of the Image-Steganography Project, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
