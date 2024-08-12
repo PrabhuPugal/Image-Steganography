@@ -36,7 +36,7 @@ Contributions are welcome! If you would like to contribute to the development of
 5. Please ensure that your code adheres to the project's coding standards and includes appropriate documentation.
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for more information.
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
 ## Contact
 For questions or feedback, please reach out to me at prabhupugal01@gmail.com.
