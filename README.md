@@ -21,6 +21,11 @@ The application uses the **Least Significant Bit (LSB) algorithm** for hiding an
    - Read the least significant bits of the image pixels.
    - Reconstruct the hidden message from the extracted bits.
 
+## Project Contributors
+```
+Prabhu P
+Pramod Krishnaa D
+```
 ## Contributing
 Contributions are welcome! If you would like to contribute to the development of the Image-Steganography Project, please follow these steps:
 
